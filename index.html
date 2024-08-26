@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamera Sistemleri | Kurumsal Web Sitesi</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Hero Section */
+    .hero {
+      padding: 100px 0;
+      background: url(fotoğraflar/2.png) no-repeat center center;
+      background-size: cover;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .hero .btn {
+      font-size: 1.25rem;
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 1rem 2rem; /* Navbar'ın üst ve alt boşluklarını artırır */
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem; /* Markanın yazı boyutunu artırır */
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.125rem; /* Menü öğelerinin yazı boyutunu artırır */
+    }
+
+    .navbar-toggler {
+      font-size: 1.25rem; /* Menü açma butonunun yazı boyutunu artırır */
+    }
+
+    /* Why Section */
+    .why-section {
+      padding: 60px 0;
+    }
+
+    .why-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .why-section .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .why-section .card-body {
+      padding: 30px;
+    }
+
+    /* Advantages Section */
+    .advantages-section {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+    }
+
+    .advantages-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .advantages-section .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .advantages-section .card-body {
+      padding: 30px;
+    }
+
+    /* Services Section */
+    #services {
+      padding: 60px 0;
+    }
+
+    .services-card {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .services-card .card-header {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .services-card .card-body {
+      padding: 30px;
+    }
+
+    /* Footer */
+    footer a {
+      margin: 0 10px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.25rem;
+      }
+
+      .hero .btn {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero .btn {
+        font-size: 0.875rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Kamera Sistemleri</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ürünler.html">Ürünlerimiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletişim.html">İletişim</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="hero bg-primary text-white text-center">
+    <div class="container">
+      <h1 class="display-4">Kamera Sistemleri ile Güvenliği Artırın</h1>
+      <p class="lead">Modern ve güvenilir kamera sistemleri ile işletmenizi koruyun.</p>
+      <a href="ürünler.html" class="btn btn-light btn-lg">Hizmetlerimizi Görüntüle</a>
+    </div>
+  </header>
+  
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="services-card card">
+            <div class="card-header">
+              <h3 class="mb-0">Hizmetlerimiz</h3>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                  <div class="icon mb-3">
+                    <i class="fas fa-camera fa-3x"></i>
+                  </div>
+                  <h4>Güvenlik Kameraları</h4>
+                  <p>Yüksek çözünürlüklü güvenlik kameraları ile 7/24 izleme imkanı.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                  <div class="icon mb-3">
+                    <i class="fas fa-bell fa-3x"></i>
+                  </div>
+                  <h4>Acil Durum Uyarıları</h4>
+                  <p>Acil durumlarda anlık uyarı ve bildirim sistemi.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                  <div class="icon mb-3">
+                    <i class="fas fa-lock fa-3x"></i>
+                  </div>
+                  <h4>Güvenlik Sistemleri</h4>
+                  <p>Gelişmiş güvenlik sistemleri ve entegre çözümler.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="advantages-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Kamera Sisteminin Avantajları</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="fotoğraflar/1.png" class="card-img-top" alt="24/7 İzleme">
+            <div class="card-body">
+              <h5 class="card-title">24/7 İzleme</h5>
+              <p class="card-text">Kamera sistemleri, günün her saati güvenliği sağlar ve işletmenizi sürekli izler.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="fotoğraflar/3.png" class="card-img-top" alt="Güvenlik">
+            <div class="card-body">
+              <h5 class="card-title">Güvenlik</h5>
+              <p class="card-text">Kamera sistemleri, yüksek güvenlik önlemleri ve mülkünüzün korunmasını sağlar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="fotoğraflar/4.png" class="card-img-top" alt="Hızlı Erişim">
+            <div class="card-body">
+              <h5 class="card-title">Hızlı Erişim</h5>
+              <p class="card-text">Kamera görüntülerine mobil cihazlardan veya bilgisayarlardan hızlıca erişim sağlayabilirsiniz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Kamera Sistemleri. Tüm Hakları Saklıdır.</p>
+      <p>
+        <a href="#" class="text-white">Gizlilik Politikası</a> |
+        <a href="#" class="text-white">Şartlar ve Koşullar</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamera Sistemleri | Kurumsal Web Sitesi</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* X ekseninde taşmayı engeller */
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 1rem 2rem; /* Navbar'ın üst ve alt boşluklarını artırır */
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem; /* Markanın yazı boyutunu artırır */
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.125rem; /* Menü öğelerinin yazı boyutunu artırır */
+    }
+
+    .navbar-toggler {
+      font-size: 1.25rem; /* Menü açma butonunun yazı boyutunu artırır */
+    }
+
+    /* About Us Section */
+    .about-section {
+      position: relative; /* Pozisyonlama için relative olarak ayarladık */
+      padding: 100px 0; /* Daha geniş bir boşluk için padding artırıldı */
+      background-color: #f8f9fa;
+      overflow: hidden; /* Arka plan animasyonlarının taşmasını önler */
+    }
+
+    .about-card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 40px; /* İçerik alanının padding'ini artırdık */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 4px solid #087cfc; /* Çerçeve rengi ve kalınlığı */
+      position: relative; /* Pozisyonlama için relative olarak ayarladık */
+      z-index: 1; /* Animasyonların card'ın arkasında kalmasını sağlar */
+      margin: 0 auto; /* Card'ı ortalamak için */
+      max-width: 1200px; /* Maksimum genişliği artırdık */
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem; /* Başlık boyutunu artırdık */
+      margin-bottom: 20px; /* Başlık ile içerik arasındaki boşluğu artırdık */
+    }
+
+    .about-section p {
+      font-size: 1rem; /* Metin boyutunu artırdık */
+      line-height: 1.6; /* Satır yüksekliğini artırdık */
+      margin-bottom: 15px; /* Paragraflar arasındaki boşluğu artırdık */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animated Squares */
+    .animated-squares {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Tıklamaları engeller */
+      overflow: hidden; /* Taşmayı önler */
+      z-index: 0; /* Card'ın arkasında kalmasını sağlar */
+    }
+
+    .animated-squares .square {
+      position: absolute;
+      width: 80px; /* Kare boyutunu artırdık */
+      height: 80px; /* Kare boyutunu artırdık */
+      background-color: rgba(8, 124, 252, 0.5); /* Karelerin rengini belirler */
+      animation: moveSquares 10s linear infinite;
+    }
+
+    @keyframes moveSquares {
+      0% {
+        transform: translate(-80px, -80px);
+      }
+      50% {
+        transform: translate(calc(100vw + 80px), calc(100vh + 80px));
+      }
+      100% {
+        transform: translate(-80px, -80px);
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) { /* Tablet ve küçük ekranlar */
+      .navbar {
+        padding: 1rem;
+      }
+
+      .navbar-brand {
+        font-size: 1.25rem;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 1rem;
+      }
+
+      .about-section {
+        padding: 80px 0;
+      }
+
+      .about-card {
+        padding: 20px;
+        max-width: 960px;
+      }
+
+      .about-section h2 {
+        font-size: 2rem;
+      }
+
+      .about-section p {
+        font-size: 0.875rem;
+      }
+    }
+
+    @media (max-width: 576px) { /* Mobil ekranlar */
+      .navbar {
+        padding: 0.75rem;
+      }
+
+      .navbar-brand {
+        font-size: 1.125rem;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 0.875rem;
+      }
+
+      .about-section {
+        padding: 60px 0;
+      }
+
+      .about-card {
+        padding: 15px;
+        max-width: 100%;
+      }
+
+      .about-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .about-section p {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Kamera Sistemleri</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Anasayfa</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ürünler.html">Ürünlerimiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletişim.html">İletişim</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="animated-squares">
+      <div class="square" style="top: 10%; left: 20%;"></div>
+      <div class="square" style="top: 30%; left: 50%;"></div>
+      <div class="square" style="top: 60%; left: 80%;"></div>
+      <div class="square" style="top: 80%; left: 10%;"></div>
+      <div class="square" style="top: 40%; left: 70%;"></div>
+      <div class="square" style="top: 20%; left: 90%;"></div>
+      <div class="square" style="top: 50%; left: 30%;"></div>
+      <div class="square" style="top: 70%; left: 50%;"></div>
+      <!-- Daha fazla kare ekleyebilirsiniz -->
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <div class="about-card">
+            <h2 class="mb-4">Hakkımızda</h2>
+            <p>Biz, güvenlik çözümlerinde sektördeki lider konumumuzu sürdürmekte kararlıyız ve bu misyonla müşterilerimize en yüksek kaliteyi ve güvenliği sunma amacı taşıyoruz. Yılların getirdiği deneyimle ve yenilikçi teknolojilerle donatılmış olan firmamız, güvenlik alanında sunduğu geniş kapsamlı çözümlerle sektördeki en üst düzeyde hizmeti vermeyi hedeflemektedir.</p>
+            <p>Gelişmiş kamera sistemlerimiz, 7/24 izleme çözümlerimiz ve acil durum yönetim hizmetlerimiz ile işletmenizi ve mülklerinizi her an güvence altına alıyoruz. Müşterilerimizin farklı güvenlik ihtiyaçlarına en iyi şekilde cevap verebilmek için sürekli olarak teknoloji yatırımları yapıyoruz ve mevcut sistemlerimizi en güncel gelişmelere göre yeniliyoruz.</p>
+            <p>Ekibimiz, güvenlik alanında uzmanlaşmış ve çeşitli disiplinlerde yüksek deneyime sahip profesyonellerden oluşmaktadır. Her bir ekip üyesi, güvenlik sistemleri konusunda derin bilgi ve yetkinliğe sahiptir ve müşterilerimize en etkili çözümleri sunmak için titizlikle çalışmaktadır.</p>
+            <p>Vizyonumuz, güvenlik sektöründeki en yüksek standartları belirlemek ve müşteri memnuniyetini her zaman ön planda tutmaktır. Bu doğrultuda, her projede mükemmelliği hedefliyor ve müşteri ihtiyaçlarını tam anlamıyla karşılamak için kişiselleştirilmiş çözümler sunuyoruz.</p>
+            <p>Müşteri odaklı yaklaşımımız, her bireysel ve kurumsal müşterimizin özel güvenlik gereksinimlerini dikkate alarak özelleştirilmiş çözümler geliştirmemizi sağlar. Amacımız, hem bireysel hem de kurumsal müşterilerimizin güvenliğini sağlamak ve onlara maksimum güvenlik hissi sunmaktır.</p>
+            <p>Bizimle çalışarak, güvenliğinizin en üst seviyede olduğunu ve herhangi bir güvenlik sorununun sizin için endişe yaratmayacağını göreceksiniz. Firmamız, güvenliğinizi ön planda tutan yaklaşımıyla, sizi ve mülklerinizi her türlü riske karşı koruma altına alır. Sunduğumuz güvenlik çözümleriyle, hayatınızı ve işinizi daha güvenli bir şekilde sürdürebilmenizi sağlamak için buradayız.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Kamera Sistemleri. Tüm hakları saklıdır.</p>
+      <p>
+        <a href="#">Gizlilik Politikası</a> |
+        <a href="#">Kullanım Şartları</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap and jQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

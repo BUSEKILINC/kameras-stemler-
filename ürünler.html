@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hizmetlerimiz | Kamera Sistemleri</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 1rem 2rem;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.125rem;
+    }
+
+    .navbar-toggler {
+      font-size: 1.25rem;
+    }
+
+    /* Services Section */
+    .services-section {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px; /* Ensure all images are the same height */
+      object-fit: cover; /* Ensure images cover the area without distortion */
+    }
+
+    .service-card-body {
+      padding: 20px;
+      flex: 1; /* Allows the body to grow and take up available space */
+    }
+
+    .service-card-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card-text {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+
+    .service-card-description {
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-top: 1px solid #ddd;
+    }
+
+    .order-button {
+      padding: 20px;
+      text-align: center;
+      background-color: #fff; /* Ensure button background doesn't overlap */
+    }
+
+    .order-button a {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      color: #fff;
+      background-color: #007bff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .order-button a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .order-button a:active {
+      background-color: #004494;
+      transform: scale(0.98);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 767px) {
+      .order-button {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Kamera Sistemleri</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="ürünler.html">Ürünlerimiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletişim.html">İletişim</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="row">
+        <!-- Service Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-card">
+            <img src="fotoğraflar/5.png" alt="Hizmet 1">
+            <div class="service-card-body">
+              <h5 class="service-card-title">Güvenlik Kameraları</h5>
+              <p class="service-card-text">Yüksek çözünürlükte güvenlik kameraları ile her açıdan güvenliğinizi sağlayın.</p>
+            </div>
+            <div class="service-card-description">
+              <p>Güvenlik kameralarımız, hem iç hem dış mekanlar için yüksek çözünürlük sunarak, 24/7 gözetim sağlar. Modern tasarımları ile her türlü çevresel koşula uygun çözümler sunar.</p>
+            </div>
+            <div class="order-button">
+              <a href="iletişim.html">Sipariş Et</a>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-card">
+            <img src="fotoğraflar/6.png" alt="Hizmet 2">
+            <div class="service-card-body">
+              <h5 class="service-card-title">Alarm Sistemleri</h5>
+              <p class="service-card-text">Hırsızlık ve diğer acil durumlara karşı gelişmiş alarm sistemleri.</p>
+            </div>
+            <div class="service-card-description">
+              <p>Alarm sistemlerimiz, gelişmiş sensörler ve hızlı yanıt mekanizmaları ile güvenliğinizi artırır. Her türlü acil duruma karşı anında tepki verebilmenizi sağlar.</p>
+            </div>
+            <div class="order-button">
+              <a href="iletişim.html">Sipariş Et</a>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="service-card">
+            <img src="fotoğraflar/7.png" alt="Hizmet 3">
+            <div class="service-card-body">
+              <h5 class="service-card-title">Erişim Kontrol Sistemleri</h5>
+              <p class="service-card-text">Giriş ve çıkışları kontrol etmek için güvenilir erişim sistemleri.</p>
+            </div>
+            <div class="service-card-description">
+              <p>Erişim kontrol sistemlerimiz, sadece yetkili kişilerin giriş yapmasını sağlar. Kartlı veya parmak izi okuyucu sistemlerimiz ile güvenliği en üst düzeye çıkarabilirsiniz.</p>
+            </div>
+            <div class="order-button">
+              <a href="iletişim.html">Sipariş Et</a>
+            </div>
+          </div>
+        </div>
+        <!-- Diğer hizmetler buraya eklenebilir -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2024 Kamera Sistemleri. Tüm Hakları Saklıdır.</p>
+      <p>
+        <a href="#" class="text-white">Gizlilik Politikası</a> |
+        <a href="#" class="text-white">Şartlar ve Koşullar</a>
+      </p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
